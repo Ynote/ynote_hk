@@ -1,0 +1,103 @@
+@import 'base';
+
+body
+{
+    background-color: $white;
+    font-family: $font-open;
+    color: $emperor;
+}
+
+img
+{
+    @include border-radius(0.4em);
+}
+
+p
+{
+    margin-bottom: 1.8em;
+}
+
+h1
+{
+    border-bottom: $alto solid 1px;
+    padding-bottom: $sp-md;
+
+    @media (max-width: 520px)
+    {
+        font-size: $font-lg;
+    }
+}
+
+h2
+{
+    text-transform: uppercase;
+    font-family: $font-lora;
+    font-size: $font-sm;
+}
+
+a
+{
+    color: $emperor;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+/* Helpers */
+.row
+{
+    margin: 0 auto;
+    max-width: 50%;
+
+    @include clearfix();
+
+    @media (max-width: 760px)
+    {
+        max-width: 85%;
+    }
+}
+
+.center
+{
+    text-align: center;
+}
+
+/* End helpers */
+
+
+/* Home */
+.home
+{
+    .heading
+    {
+        margin-top: 5%;
+
+        .title-card
+        {
+            float: left;
+        }
+
+        picture
+        {
+            display: block;
+            margin-right: 5%;
+            margin-bottom: 5%;
+            float: left;
+        }
+    }
+
+    .description
+    {
+        font-size: $font-md;
+        margin: 0 auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        line-height: 2.5em;
+        position: relative;
+        border-left: 1px $wildsand solid;
+    }
+}
+/* End home */
