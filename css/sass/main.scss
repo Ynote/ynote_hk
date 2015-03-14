@@ -33,6 +33,7 @@ h2
     text-transform: uppercase;
     font-family: $font-lora;
     font-size: $font-sm;
+    margin-bottom: 25%;
 }
 
 a
@@ -43,20 +44,20 @@ a
 
 a:hover
 {
-    text-decoration: underline;
+    color: $cardinal;
 }
 
 /* Helpers */
 .row
 {
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 40%;
 
     @include clearfix();
 
     @media (max-width: 760px)
     {
-        max-width: 85%;
+        max-width: 75%;
     }
 }
 
@@ -74,18 +75,12 @@ a:hover
     .heading
     {
         margin-top: 5%;
-
-        .title-card
-        {
-            float: left;
-        }
+        text-align: center;
 
         picture
         {
             display: block;
-            margin-right: 5%;
             margin-bottom: 5%;
-            float: left;
         }
     }
 
@@ -98,6 +93,46 @@ a:hover
         line-height: 2.5em;
         position: relative;
         border-left: 1px $wildsand solid;
+        margin-bottom: 15%;
+    }
+
+    .social-links
+    {
+        padding-left: 0;
+        margin-bottom: 10%;
+        text-align: center;
+
+        li
+        {
+            list-style: none;
+            font-size: $font-xl;
+            display: inline-block;
+            position: relative;
+        }
+
+        li:not(:last-child)
+        {
+            margin-right: 10%;
+        }
+
+        li:first-child:before,
+        li:last-child:after
+        {
+            content: " ";
+            display: block;
+            height: 1px;
+            width: $line-w;
+            background-color: $alto;
+            position: absolute;
+            left: -($line-w + $line-mg);
+            top: 50%;
+        }
+
+        li:last-child:after
+        {
+            left: auto;
+            right: -($line-w + $line-mg);
+        }
     }
 }
 /* End home */
