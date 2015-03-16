@@ -51,9 +51,14 @@ a:hover
 .row
 {
     margin: 0 auto;
-    max-width: 40%;
+    max-width: 30%;
 
     @include clearfix();
+
+    @media (max-width: 1280px)
+    {
+        max-width: 45%;
+    }
 
     @media (max-width: 760px)
     {
@@ -88,11 +93,8 @@ a:hover
     {
         font-size: $font-md;
         margin: 0 auto;
-        padding-left: 5%;
-        padding-right: 5%;
         line-height: 2.5em;
         position: relative;
-        border-left: 1px $wildsand solid;
         margin-bottom: 15%;
     }
 
