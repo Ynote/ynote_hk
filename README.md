@@ -1,4 +1,4 @@
-# Personal portfolio
+# ynote.hk
 
 Single page for my personnal website: [http://www.ynote.hk](http://www.ynote.hk)
 
