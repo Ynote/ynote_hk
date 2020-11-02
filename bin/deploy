@@ -1,0 +1,2 @@
+ cp index.html ../../../ynote.hk/htdocs/
+ cp -r freelance ../../../ynote.hk/htdocs/
