@@ -6,6 +6,6 @@ This is the page for my personnal website: [http://ynote.hk](http://ynote.hk).
 
 Deploy on http://ynote.hk with:
 
-``
+```
 bin/deploy
 ```
